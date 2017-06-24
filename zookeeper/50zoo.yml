@@ -2,7 +2,7 @@ apiVersion: apps/v1beta1
 kind: StatefulSet
 metadata:
   name: zoo
-  namespace: kafka
+  namespace: kafka-hostpath
 spec:
   serviceName: "zoo"
   replicas: 5

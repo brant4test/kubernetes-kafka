@@ -1,6 +1,8 @@
 
 # Kafka as Kubernetes StatefulSet
 
+Brant: changed namespace from kafka to kafka-hostpath
+
 Example of three Kafka brokers depending on five Zookeeper instances.
 
 To get consistent service DNS names `kafka-N.broker.kafka`(`.svc.cluster.local`), run everything in a [namespace](http://kubernetes.io/docs/admin/namespaces/walkthrough/):
@@ -17,7 +19,7 @@ Alternatively create [PV](http://kubernetes.io/docs/user-guide/persistent-volume
 
 ```
 ./bootstrap/pv.sh
-kubectl create -f ./bootstrap/pvc.yml
+kubectl create -f 10pvc.yml
 # check that claims are bound
 kubectl get pvc
 ```

@@ -2,7 +2,7 @@ apiVersion: apps/v1beta1
 kind: StatefulSet
 metadata:
   name: kafka
-  namespace: kafka
+  namespace: kafka-hostpath
 spec:
   serviceName: "broker"
   replicas: 3

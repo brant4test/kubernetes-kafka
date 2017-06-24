@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: datadir-kafka-0
-  namespace: kafka
+  namespace: kafka-hostpath
 spec:
   accessModes:
     - ReadWriteOnce
@@ -19,7 +19,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: datadir-kafka-1
-  namespace: kafka
+  namespace: kafka-hostpath
 spec:
   accessModes:
     - ReadWriteOnce
@@ -35,7 +35,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: datadir-kafka-2
-  namespace: kafka
+  namespace: kafka-hostpath
 spec:
   accessModes:
     - ReadWriteOnce
